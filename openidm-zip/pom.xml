@@ -52,12 +52,32 @@
 
 	<!-- FIT Third-party (TP) libs repository -->
 	<repository>
-          <id>FIT CVUT</id>
+          <id>FIT CVUT ext release</id>
           <name>FIT CVUT-releases</name>
           <url>http://repository.fit.cvut.cz/maven/ext-release-local</url>
 	  <snapshots>
             <enabled>false</enabled>
           </snapshots>
+	</repository>
+
+	<!-- FIT Releases repository -->
+	<repository>
+          <id>FIT CVUT libs release</id>
+          <name>FIT CVUT-releases</name>
+          <url>http://repository.fit.cvut.cz/maven/libs-release-local</url>
+	  <snapshots>
+	    <enabled>false</enabled>
+          </snapshots>
+	</repository>
+
+	<!-- FIT Snapshots repository -->
+	<repository>
+          <id>FIT CVUT libs snapshot</id>
+          <name>FIT CVUT-snapshots</name>
+          <url>http://repository.fit.cvut.cz/maven/libs-snapshot-local</url>
+	  <releases>
+            <enabled>false</enabled>
+          </releases>
 	</repository>
 	
     </repositories>
@@ -69,6 +89,7 @@
         <exclude.salesforce.samples>samples/salesforce-connector/**</exclude.salesforce.samples>
         <exclude.google.provisioner>samples/provisioners/provisioner.openicf-google.json</exclude.google.provisioner>
         <exclude.salesforce.provisioner>samples/provisioners/provisioner.salesforce-salesforce.json</exclude.salesforce.provisioner>
+	<cz.cvut.fit.idm.openidm-extensions.version>1.0.0-SNAPSHOT</cz.cvut.fit.idm.openidm-extensions.version>
     </properties>
     <dependencies>
         <dependency>
@@ -234,12 +255,12 @@
         <dependency>
             <groupId>cz.cvut.fit.idm</groupId>
             <artifactId>openidm-schema</artifactId>
-            <version>1.0.0</version>
+            <version>${cz.cvut.fit.idm.openidm-extensions.version}</version>
         </dependency>
         <dependency>
             <groupId>cz.cvut.fit.idm</groupId>
             <artifactId>openidm-schema</artifactId>
-            <version>1.0.0</version>
+            <version>${cz.cvut.fit.idm.openidm-extensions.version}</version>
 	    <scope>runtime</scope>
 	    <type>zip</type>
 	    <classifier>extension-scripts</classifier>
@@ -247,7 +268,7 @@
 	<dependency>
             <groupId>cz.cvut.fit.idm</groupId>
             <artifactId>openidm-jslibs</artifactId>
-            <version>1.0.0</version>
+            <version>${cz.cvut.fit.idm.openidm-extensions.version}</version>
 	    <scope>runtime</scope>
 	    <type>zip</type>
 	    <classifier>extension-scripts</classifier>
