@@ -21,6 +21,9 @@
     <formats>
         <format>zip</format>
     </formats>
+    <componentDescriptors>
+      <componentDescriptor>src/main/assembly/fit-extensions-component.xml</componentDescriptor>
+    </componentDescriptors>
     <fileSets>
         <fileSet>
             <directory>${basedir}/src/main/resources/security</directory>

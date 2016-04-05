@@ -49,6 +49,17 @@
                 <enabled>false</enabled>
             </releases>
         </repository>
+
+	<!-- FIT Third-party (TP) libs repository -->
+	<repository>
+          <id>FIT CVUT</id>
+          <name>FIT CVUT-releases</name>
+          <url>http://repository.fit.cvut.cz/maven/ext-release-local</url>
+	  <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+	</repository>
+	
     </repositories>
     <properties>
         <!-- If we release this project, we need to include the Forgerock binary license -->
@@ -218,6 +229,50 @@
             <artifactId>custom-scripted-connector-bundler</artifactId>
             <version>${project.version}</version>
         </dependency>
+
+	<!-- ========== FIT OpenIDM Extensions ========== -->
+        <dependency>
+            <groupId>cz.cvut.fit.idm</groupId>
+            <artifactId>openidm-schema</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>cz.cvut.fit.idm</groupId>
+            <artifactId>openidm-schema</artifactId>
+            <version>1.0.0</version>
+	    <scope>runtime</scope>
+	    <type>zip</type>
+	    <classifier>extension-scripts</classifier>
+        </dependency>
+	<dependency>
+            <groupId>cz.cvut.fit.idm</groupId>
+            <artifactId>openidm-jslibs</artifactId>
+            <version>1.0.0</version>
+	    <scope>runtime</scope>
+	    <type>zip</type>
+	    <classifier>extension-scripts</classifier>
+        </dependency>
+
+	<!-- ========== FIT OpenIDM TP Libs ========== -->
+
+	<!-- Usermap Oracle connector dependencies -->
+	<dependency>
+	  <groupId>com.oracle</groupId>
+	  <artifactId>ojdbc6</artifactId>
+	  <version>11.2.0.3</version>
+	</dependency>
+
+	<!-- MySQL ScriptedSQL connector  dependencies -->
+	<dependency>
+	  <groupId>mysql</groupId>
+	  <artifactId>mysql-connector-java</artifactId>
+	  <version>5.1.38</version>
+	</dependency>
+
+
+	<!-- ========================================= -->
+
+	
         <!-- Core OSGi -->
         <dependency>
             <groupId>org.osgi</groupId>
