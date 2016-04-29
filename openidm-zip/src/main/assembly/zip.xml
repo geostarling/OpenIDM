@@ -1064,6 +1064,9 @@
                 <exclude>xml-resolver:xml-resolver</exclude>
                 <exclude>org.apache.httpcomponents:httpcore-nio</exclude>
                 <exclude>org.apache.tomcat:tomcat-jdbc</exclude>
+                <!-- Exclude unwanted FIT dependencies from bundles/ dir -->
+                <exclude>cz.cvut.fit.idm:umapi-client-*</exclude>
+                <exclude>cz.jirutka.rsql:rsql-parser</exclude>
             </excludes>
         </dependencySet>
         <dependencySet>
