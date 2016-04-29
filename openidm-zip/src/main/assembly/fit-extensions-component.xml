@@ -23,26 +23,35 @@
      THE SOFTWARE.
      -->
 <component xmlns="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.2"
-	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	   xsi:schemaLocation="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.2 http://maven.apache.org/xsd/assembly-1.1.2.xsd">
-  <dependencySets>
-      <dependencySet>
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.2 http://maven.apache.org/xsd/assembly-1.1.2.xsd">
+    <dependencySets>
+        <dependencySet>
             <fileMode>644</fileMode>
-	    <useProjectArtifact>false</useProjectArtifact>
+            <useProjectArtifact>false</useProjectArtifact>
             <outputDirectory>/openidm/bin/extensions/script</outputDirectory>
-	    <unpack>true</unpack>
+            <unpack>true</unpack>
             <scope>runtime</scope>
             <includes>
-              <include>cz.cvut.fit.idm:openidm-*:zip:*</include>
+                <include>cz.cvut.fit.idm:openidm-*:zip:*</include>
             </includes>
-      </dependencySet>
-      <dependencySet>
-        <useProjectArtifact>false</useProjectArtifact>
-        <outputDirectory>/openidm/lib</outputDirectory>
-        <includes>
-	  <include>com.oracle:ojdbc6</include>
-          <include>mysql:mysql-connector-java</include>
-	</includes>
-      </dependencySet>
+        </dependencySet>
+        <dependencySet>
+            <useProjectArtifact>false</useProjectArtifact>
+            <outputDirectory>/openidm/lib</outputDirectory>
+            <includes>
+                <include>com.oracle:ojdbc6</include>
+                <include>mysql:mysql-connector-java</include>
+                <include>cz.cvut.fit.idm:umapi-client-*</include>
+                <include>cz.jirutka.rsql:rsql-parser</include>
+            </includes>
+        </dependencySet>
+        <dependencySet>
+            <useProjectArtifact>false</useProjectArtifact>
+            <outputDirectory>/openidm/connectors</outputDirectory>
+            <includes>
+                <include>org.forgerock.openicf.connectors:umapi-connector</include>
+            </includes>
+        </dependencySet>
     </dependencySets>
 </component>

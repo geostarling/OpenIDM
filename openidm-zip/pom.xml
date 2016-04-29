@@ -251,7 +251,41 @@
             <version>${project.version}</version>
         </dependency>
 
-	<!-- ========== FIT OpenIDM Extensions ========== -->
+        <!-- ========== FIT OpenIDM Connector Libs and Deps ========== -->
+
+        <!-- Umapi connector -->
+
+        <dependency>
+            <groupId>org.forgerock.openicf.connectors</groupId>
+            <artifactId>umapi-connector</artifactId>
+            <version>1.1.0.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>cz.cvut.fit.idm</groupId>
+            <artifactId>umapi-client-api</artifactId>
+            <version>1.1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>cz.cvut.fit.idm</groupId>
+            <artifactId>umapi-client-rest</artifactId>
+            <version>1.1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>cz.cvut.fit.idm</groupId>
+            <artifactId>umapi-client-validation</artifactId>
+            <version>1.1.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>cz.jirutka.rsql</groupId>
+            <artifactId>rsql-parser</artifactId>
+            <version>2.0.M1</version>
+        </dependency>
+
+
+
+        <!-- ========== FIT OpenIDM Extensions ========== -->
         <dependency>
             <groupId>cz.cvut.fit.idm</groupId>
             <artifactId>openidm-schema</artifactId>
@@ -261,37 +295,36 @@
             <groupId>cz.cvut.fit.idm</groupId>
             <artifactId>openidm-schema</artifactId>
             <version>${cz.cvut.fit.idm.openidm-extensions.version}</version>
-	    <scope>runtime</scope>
-	    <type>zip</type>
-	    <classifier>extension-scripts</classifier>
+            <scope>runtime</scope>
+            <type>zip</type>
+            <classifier>extension-scripts</classifier>
         </dependency>
-	<dependency>
+        <dependency>
             <groupId>cz.cvut.fit.idm</groupId>
             <artifactId>openidm-jslibs</artifactId>
             <version>${cz.cvut.fit.idm.openidm-extensions.version}</version>
-	    <scope>runtime</scope>
-	    <type>zip</type>
-	    <classifier>extension-scripts</classifier>
+            <scope>runtime</scope>
+            <type>zip</type>
+            <classifier>extension-scripts</classifier>
         </dependency>
 
-	<!-- ========== FIT OpenIDM TP Libs ========== -->
+        <!-- ========== FIT OpenIDM TP Libs ========== -->
 
-	<!-- Usermap Oracle connector dependencies -->
-	<dependency>
-	  <groupId>com.oracle</groupId>
-	  <artifactId>ojdbc6</artifactId>
-	  <version>11.2.0.3</version>
-	</dependency>
+        <!-- Usermap Oracle connector dependencies -->
+        <dependency>
+            <groupId>com.oracle</groupId>
+            <artifactId>ojdbc6</artifactId>
+            <version>11.2.0.3</version>
+        </dependency>
 
-	<!-- MySQL ScriptedSQL connector  dependencies -->
-	<dependency>
-	  <groupId>mysql</groupId>
-	  <artifactId>mysql-connector-java</artifactId>
-	  <version>5.1.38</version>
-	</dependency>
+        <!-- MySQL ScriptedSQL connector  dependencies -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.38</version>
+        </dependency>
 
-
-	<!-- ========================================= -->
+        <!-- ========================================= -->
 
 	
         <!-- Core OSGi -->
