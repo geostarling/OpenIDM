@@ -254,7 +254,6 @@
         <!-- ========== FIT OpenIDM Connector Libs and Deps ========== -->
 
         <!-- Umapi connector -->
-
         <dependency>
             <groupId>org.forgerock.openicf.connectors</groupId>
             <artifactId>umapi-connector</artifactId>
@@ -265,43 +264,17 @@
             <groupId>cz.cvut.fit.idm</groupId>
             <artifactId>umapi-client-api</artifactId>
             <version>1.1.0</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>*</groupId>
-                    <artifactId>*</artifactId>
-                </exclusion>
-            </exclusions>
         </dependency>
         <dependency>
             <groupId>cz.cvut.fit.idm</groupId>
             <artifactId>umapi-client-rest</artifactId>
             <version>1.1.0</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>*</groupId>
-                    <artifactId>*</artifactId>
-                </exclusion>
-            </exclusions>
         </dependency>
-        <dependency>
-            <groupId>cz.cvut.fit.idm</groupId>
-            <artifactId>umapi-client-validation</artifactId>
-            <version>1.1.0</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>*</groupId>
-                    <artifactId>*</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-
         <dependency>
             <groupId>cz.jirutka.rsql</groupId>
             <artifactId>rsql-parser</artifactId>
             <version>2.0.M1</version>
         </dependency>
-
-
 
         <!-- ========== FIT OpenIDM Extensions ========== -->
         <dependency>
