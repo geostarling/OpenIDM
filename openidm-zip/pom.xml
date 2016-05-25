@@ -89,7 +89,7 @@
         <exclude.salesforce.samples>samples/salesforce-connector/**</exclude.salesforce.samples>
         <exclude.google.provisioner>samples/provisioners/provisioner.openicf-google.json</exclude.google.provisioner>
         <exclude.salesforce.provisioner>samples/provisioners/provisioner.salesforce-salesforce.json</exclude.salesforce.provisioner>
-	<cz.cvut.fit.idm.openidm-extensions.version>1.0.0-SNAPSHOT</cz.cvut.fit.idm.openidm-extensions.version>
+	      <cz.cvut.fit.idm.openidm-extensions.version>1.0.0</cz.cvut.fit.idm.openidm-extensions.version>
     </properties>
     <dependencies>
         <dependency>
@@ -257,18 +257,18 @@
         <dependency>
             <groupId>org.forgerock.openicf.connectors</groupId>
             <artifactId>umapi-connector</artifactId>
-            <version>1.1.0.2-SNAPSHOT</version>
+            <version>1.1.0.2</version>
         </dependency>
 
         <dependency>
             <groupId>cz.cvut.fit.idm</groupId>
             <artifactId>umapi-client-api</artifactId>
-            <version>1.1.1-SNAPSHOT</version>
+            <version>1.1.1</version>
         </dependency>
         <dependency>
             <groupId>cz.cvut.fit.idm</groupId>
             <artifactId>umapi-client-rest</artifactId>
-            <version>1.1.1-SNAPSHOT</version>
+            <version>1.1.1</version>
         </dependency>
         <dependency>
             <groupId>cz.jirutka.rsql</groupId>
