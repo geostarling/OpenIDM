@@ -1068,8 +1068,6 @@
                 <exclude>cz.cvut.fit.idm:umapi-client-*</exclude>
                 <exclude>cz.jirutka.rsql:rsql-parser</exclude>
                 <exclude>org.forgerock.openicf.connectors:umapi-connector</exclude>
-                <exclude>org.codehaus.jackson:jackson-core-asl:jar:1.9.10</exclude>
-                <exclude>org.codehaus.jackson:jackson-mapper-asl:jar:1.9.9</exclude>
                 <exclude>org.slf4j:slf4j-api:jar:1.7.6</exclude>
                 <exclude>org.slf4j:slf4j-log4j12:jar:1.7.6</exclude>
                 <exclude>log4j:log4j:jar:1.2.17</exclude>
@@ -1080,9 +1078,7 @@
                 <exclude>net.jcip:jcip-annotations:jar:1.0</exclude>
                 <exclude>commons-logging:commons-logging:jar:1.1.1</exclude>
                 <exclude>org.apache.james:apache-mime4j:jar:0.6</exclude>
-                <exclude>org.restlet.jee:org.restlet.ext.slf4j:jar:2.1.0</exclude>
-                <exclude>org.codehaus.jackson:jackson-core-asl:jar:1.9.10</exclude>
-                <exclude>org.codehaus.jackson:jackson-mapper-asl:jar:1.9.9</exclude>
+                <exclude>org.restlet.jee:org.restlet.ext.slf4j:jar:2.1.2</exclude>
             </excludes>
         </dependencySet>
         <dependencySet>
